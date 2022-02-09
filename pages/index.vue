@@ -1,6 +1,6 @@
 <template>
   <h1 class="text-3xl font-bold underline">
-    Kabinet
+    Home Page
   </h1>
 </template>
 

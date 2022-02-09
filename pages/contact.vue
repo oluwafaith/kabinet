@@ -1,5 +1,5 @@
 <template>
     <h1>
-        This is the Login Page
+        This is the Contact Page
     </h1>
 </template>

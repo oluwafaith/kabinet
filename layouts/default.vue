@@ -1,12 +1,15 @@
 <template>
-    <div class="bg-indigo-500">
-        This is the Header Part
+    <div>
+        <Header />
         <nuxt />
     </div>
 </template>
 
 <script>
+import Header from '../components/Header.vue'
 export default {
-    
+    components: {
+        Header
+    }
 }
 </script>
