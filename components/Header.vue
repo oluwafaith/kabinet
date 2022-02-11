@@ -1,7 +1,9 @@
 <template>
     <nav class="flex items-center justify-between flex-wrap bg-teal px-12 py-6 bg-white">
   <div class="flex items-center flex-no-shrink text-white mr-6">
-    <img src="/logo.png" alt="Logo" class="h-8 w-32 mr-2">
+      <nuxt-link to="/">
+        <img src="/logo.png" alt="Logo" class="h-8 w-32 mr-2">
+      </nuxt-link>
   </div>
   <div class="w-full block flex-col lg:flex lg:items-center lg:w-auto">
     <div class="text-sm lg:flex-grow">
