@@ -5,7 +5,7 @@
           backgroundImage: `url(${trend.img})`,
            backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-         
+          
 
         }">
       <!-- img -->

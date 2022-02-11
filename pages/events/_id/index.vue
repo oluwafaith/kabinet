@@ -2,20 +2,19 @@
   <div>
     <div v-for="trend in Trends" :trend="trend" :key="trend.id">
       <div
-        class="w-full "
+        class="bg-center m-0 p-0"
         :style="{
           backgroundImage: `url(${trend.img})`,
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          height: '486px',
-
+          height: '400px',
         }"
       >
-        <nuxt-link :to="{ name: 'events' }">Back </nuxt-link>
+        <!-- <nuxt-link :to="{ name: 'events' }">Back </nuxt-link> -->
       </div>
 
       <div class="flex items-center bg-blue-900 h-20 text-white">
-        <div class="flex text-lg pl-20">
+        <div class="flex text-lg pl-30">
           <span class="pr-20">
             <fa :icon="['fas', 'thumbs-up']" />
             interested</span
@@ -29,18 +28,23 @@
 
       <div
         class="flex justify-between flex-row pl-16 pr-16"
-        :style="{ height: '700px' }"
+        :style="{ height: '600px' }"
       >
         <!-- left -->
         <div class="w-7/12" :style="{ width: '700px' }">
-          <div class="text-xl mt-4 font-bold pb-5 text-slate-600" :style="{ fontSize: '32px' }">
+          <div
+            class="text-lg mt-4 font-bold pb-5 text-slate-600"
+            :style="{ fontSize: '32px' }"
+          >
             {{ trend.name }}
           </div>
-          <div class="break-all align-middle text-justify text-xl text-slate-500">
+          <div
+            class="break-all align-middle text-justify text-md text-slate-500"
+          >
             {{ trend.details }}
           </div>
-          <p class="font-bold text-xl pb-2 pt-2 text-slate-600 ">Highlights</p>
-          <ul class="text-lg text-slate-500 list-disc">
+          <p class="font-bold text-xl pb-2 pt-2 text-slate-600">Highlights</p>
+          <ul class="text-md text-slate-500 list-disc">
             <li>
               Sparking dialogue, igniting inspiration, and diving deep into the
               current issues facing the fashion.
@@ -63,21 +67,24 @@
           >
             Details
           </div>
-          <div>
-            <!-- <div class="h-96 w-1 bg-slate-300">
-            </div> -->
-            <p class="mb-2 text-slate-600 font-bold">Date:</p>
-          <span class="text-slate-600 ">{{ trend.date }}</span>
-          <p class="mt-2 mb-2 text-slate-600 font-bold">Time:</p>
-          <span class="text-slate-600 ">{{ trend.time }}</span>
-          <p class="mt-2 mb-2 text-slate-600 font-bold">Location:</p>
-          <span class="text-slate-600 ">{{ trend.location }}</span>
-          <p class="mt-2 mb-2 text-slate-600 font-bold">Entry Fee:</p>
-          <span class="text-slate-600 ">{{trend.fee}}</span>
-          <p class="mt-2 mb-2 text-slate-600 font-bold">Official Link:</p>
-          <span class="text-slate-600 "> {{trend.link}}</span>
+
+          <div class="flex">
+            <div class="h-96 w-0.5 bg-slate-300"></div>
+
+            <div class="pl-10">
+              <p class="mb-2 text-slate-600 font-bold">Date:</p>
+              <span class="text-slate-600">{{ trend.date }}</span>
+              <p class="mt-2 mb-2 text-slate-600 font-bold">Time:</p>
+              <span class="text-slate-600">{{ trend.time }}</span>
+              <p class="mt-2 mb-2 text-slate-600 font-bold">Location:</p>
+              <span class="text-slate-600">{{ trend.location }}</span>
+              <p class="mt-2 mb-2 text-slate-600 font-bold">Entry Fee:</p>
+              <span class="text-slate-600">{{ trend.fee }}</span>
+              <p class="mt-2 mb-2 text-slate-600 font-bold">Official Link:</p>
+              <span class="text-slate-600"> {{ trend.link }}</span>
             </div>
 
+          </div>
         </div>
       </div>
     </div>
