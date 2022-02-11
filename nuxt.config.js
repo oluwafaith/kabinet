@@ -33,8 +33,16 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    // '@nuxtjs/apollo'
   ],
+  // apollo: {
+  //   clientConfigs: {
+  //     default: {
+  //       httpEndpoint: 'http://localhost:4000'
+  //     }
+  //   }
+  // },
 
   fontawesome:{
     component: 'fa',

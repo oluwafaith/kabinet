@@ -3,15 +3,15 @@
   <h1 class="text-3xl font-bold underline">
     Home Page
   </h1>
-  <card/>
+  <Trending/>
 </div>
 </template>
 
 <script>
-import Card from '../components/Card.vue'
+import Trending from '../components/Trending.vue'
 export default {
-  components: { Card },
+  components: { Trending },
   name: 'IndexPage',
- 
+
 }
 </script>
