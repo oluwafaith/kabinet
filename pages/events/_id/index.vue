@@ -15,7 +15,7 @@
 
       <div class="flex items-center bg-blue-900 h-20 text-white">
         <div class="flex text-lg pl-30">
-          <span class="pr-20">
+          <span class="pr-20 pl-20">
             <fa :icon="['fas', 'thumbs-up']" />
             interested</span
           >
