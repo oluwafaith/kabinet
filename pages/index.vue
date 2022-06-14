@@ -11,7 +11,9 @@
     <div class="px-32 py-6 bg-sky-900 text-white">
       <h4>Trending Events</h4>
     </div>
+    <div class="mt-20">
     <Trending/>
+    </div>
   </div>
 </template>
 
